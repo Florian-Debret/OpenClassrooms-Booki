@@ -1,7 +1,29 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .hebergement {
   background-color: grey;
 }
 
 .populaire {
   background-color: grey;
+}
+
+header li:hover a {
+  color: blue;
+}
+
+/*===============Footer-===============*/
+footer {
+  background-color: lightgray;
+}
+
+footer li a:hover {
+  color: white;
+}
+
+.colonne ul {
+  list-style: none;
 }
