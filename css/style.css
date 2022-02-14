@@ -1,29 +1,93 @@
+/*===============Génral===============*/
+
+/*===============Header===============*/
+header {
+  margin-block-start: 0%;
+}
+
+header li {
+  list-style-type: none;
+  color: black;
+  font-size: 20px;
+}
+
+header li:hover a {
+  color: #0065fc;
+}
+
+.sinscrire {
+  font-weight: bold;
+  color: #0065fc;
+}
+
+header section .colonne {
+  display: flex;
+}
+
+.flex {
+  flex-grow: 1;
+}
+
+/*===============Body===============*/
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+/*===============Liens===============*/
 a {
   text-decoration: none;
   color: black;
 }
 
+/*===============Section hébergement===============*/
 .hebergement {
   background-color: grey;
+  width: 50%;
+  padding: 30px;
+  margin: 0px 0px 50px 200px;
 }
 
+/*===============Section Le splus populaires===============*/
 .populaire {
-  background-color: grey;
+  background-color: #808080;
+  margin: 0px 200px 0px 30px;
+  width: 20%;
+  padding: 30px;
 }
 
-header li:hover a {
-  color: blue;
-}
-
-/*===============Footer-===============*/
+/*===============Footer===============*/
 footer {
   background-color: lightgray;
+  margin: auto;
+  display: block 10px 10px 10px 10px;
+  padding: 0 1rem;
+  display: flex;
 }
 
 footer li a:hover {
-  color: white;
+  text-decoration: underline;
 }
 
-.colonne ul {
-  list-style: none;
+footer li {
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.colonne {
+  display: flex;
+}
+
+.flex {
+  flex-grow: 1;
 }
