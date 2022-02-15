@@ -1,31 +1,54 @@
-/*===============Génral===============*/
-
 /*===============Header===============*/
-header {
-  margin-block-start: 0%;
+.enveloppe {
+  margin: 15px;
 }
 
-header li {
-  list-style-type: none;
-  color: black;
-  font-size: 20px;
+.ligne {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-header li:hover a {
-  color: #0065fc;
+.colonne1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
-.sinscrire {
+.colonne2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.colonne-verte {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 20px;
+}
+
+header img {
+  max-width: 12.5%;
+}
+
+#sinscrire {
   font-weight: bold;
   color: #0065fc;
 }
 
-header section .colonne {
-  display: flex;
+header section div a:hover {
+  text-decoration: underline;
+  color: #0065fc;
 }
 
-.flex {
-  flex-grow: 1;
+header section div a {
+  text-decoration: none;
+  padding: 0;
+  color: black;
 }
 
 /*===============Body===============*/
@@ -33,14 +56,19 @@ body {
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
-
 /*===============Liens===============*/
-a {
-  text-decoration: none;
-  color: black;
+
+/*===============Nav===============*/
+nav ul li {
+  list-style-type: none;
 }
 
 /*===============Section hébergement===============*/
+
+body img {
+  width: 30%;
+}
+
 .hebergement {
   background-color: grey;
   width: 50%;
@@ -65,23 +93,28 @@ footer {
   display: flex;
 }
 
-footer li a:hover {
-  text-decoration: underline;
+footer ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 footer li {
   margin-bottom: 1rem;
 }
 
-footer ul {
-  list-style-type: none;
-  padding: 0;
+footer li a:hover {
+  text-decoration: underline;
 }
 
 footer section {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+footer section a {
+  text-decoration: none;
+  color: black;
 }
 
 .colonne {

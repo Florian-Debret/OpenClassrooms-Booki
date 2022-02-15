@@ -15,28 +15,22 @@
   <body>
     <header>
       <section>
-        <div class="flex"></div>
-        <ul>
-          <li>
-            <img
-              src="images/logo/booki-petit.png"
-              alt="Booki"
-              class="grand_logo_booki"
-            />
-          </li>
-        </ul>
-        <div class="flex"></div>
-        <ul>
-          <li><a href="#hebergement">Hébergement</a></li>
-        </ul>
-        <div class="flex"></div>
-        <ul>
-          <li><a href="#activités">Activités</a></li>
-        </ul>
-        <div class="flex"></div>
-        <ul>
-          <li><a class="sinscrire" href="#sinscrire">S'inscrire</a></li>
-        </ul>
+        <div class="enveloppe">
+          <div class="ligne">
+            <div class="colonne1">
+              <img src="images/logo/Booki 235x135.png" />
+            </div>
+            <div class="colonne2">
+              <div class="colonne-verte">
+                <a href="#hebergement">Hébergement</a>
+              </div>
+              <div class="colonne-verte">
+                <a href="#activites">Activitées</a>
+              </div>
+              <div class="colonne-verte" id="sinscrire">S'inscrire</div>
+            </div>
+          </div>
+        </div>
       </section>
     </header>
 
@@ -63,10 +57,9 @@
     <section id="hebergement" class="hebergement">
       <h2>Hébergement à marseille</h2>
       <!--inséré l'icône-->
-
-      <article>
+      <article class="fenetre">
         <img
-          src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+          src="images/hebergements/large/auberge-de-la-cannebiere_l.jpg"
           alt="aubergedelacannebiere"
         />
         <div class="border">
@@ -82,41 +75,94 @@
         </div>
       </article>
 
-      <article>
-        <p>Auberge de la Cannebière</p>
-        <p>Nuit à partir de 25€</p>
-        <p>stars</p>
-        <!--inséré l'icône-->
+      <article class="fenetre">
+        <img
+          src="images/hebergements/large/hotel-du-port_l.jpg"
+          alt="hotel-du-port"
+        />
+        <div class="border">
+          <h3>Hôtel du port</h3>
+          <span class="prix">Nuit à partir de 52€</span>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </article>
+
       <article>
-        <p>Hôtel du port</p>
-        <p>Nuit à partir de 25€</p>
-        <p>stars</p>
-        <!--inséré l'icône-->
+        <img
+          src="images/hebergements/large/hotel-les-mouettes_l.jpg"
+          alt="hotel-les-mouettes"
+        />
+        <div class="border">
+          <h3>Hôtel les mouettes</h3>
+          <span class="prix">Nuit à partir de 76€</span>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </article>
+
       <article>
-        <p>Hôtel Les mouettes</p>
-        <p>Nuit à partir de 76€</p>
-        <p>stars</p>
-        <!--inséré l'icône-->
+        <img
+          src="images/hebergements/large/auberge-de-la-mer_l.jpg"
+          alt="auberge-de-la-mer"
+        />
+        <div class="border">
+          <h3>Hôtel du port</h3>
+          <span class="prix">Nuit à partir de 46€</span>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </article>
+
       <article>
-        <p>Auberge de la mer</p>
-        <p>Nuit à partir de 46€</p>
-        <p>stars</p>
-        <!--inséré l'icône-->
+        <img
+          src="images/hebergements/large/auberge-le-panier_l.jpg"
+          alt="auberge-le-panier"
+        />
+        <div class="border">
+          <h3>Hôtel les mouettes</h3>
+          <span class="prix">Nuit à partir de 23€</span>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </article>
+
       <article>
-        <p>Auberge le Panier</p>
-        <p>Nuit à partir de 23€</p>
-        <p>stars</p>
-        <!--inséré l'icône-->
-      </article>
-      <article>
-        <p>Hôtel chez Amina</p>
-        <p>Nuit à partir de 96€</p>
-        <p>stars</p>
-        <!--inséré l'icône-->
+        <img
+          src="images/hebergements/large/hotel-chez-amina_l.jpg"
+          alt="hotel-chez-amina"
+        />
+        <div class="border">
+          <h3>Hôtel du port</h3>
+          <span class="prix">Nuit à partir de 96€</span>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </article>
     </section>
 
@@ -143,7 +189,7 @@
       </article>
     </section>
 
-    <section id="activités">
+    <section id="#activites">
       <h2>Activités à Marseille</h2>
       <article>
         <p>Vieux Port</p>
