@@ -31,24 +31,24 @@
   padding: 20px;
 }
 
-header img {
-  max-width: 12.5%;
-}
-
-#sinscrire {
+.colonne-verte.sinscrire a {
   font-weight: bold;
   color: #0065fc;
 }
 
-header section div a:hover {
-  text-decoration: underline;
-  color: #0065fc;
+header img {
+  max-width: 12.5%;
 }
 
-header section div a {
+header div a {
   text-decoration: none;
   padding: 0;
   color: black;
+}
+
+header div a:hover {
+  text-decoration: underline;
+  color: #0065fc;
 }
 
 /*===============Body===============*/
