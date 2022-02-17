@@ -58,7 +58,8 @@ body img {
 }
 
 .hebergement {
-  background-color: grey;
+  background-color: #f2f2f2;
+  border-radius: 25px;
   width: 50%;
   padding: 30px;
   margin: 0px 0px 50px 200px;
@@ -66,7 +67,8 @@ body img {
 
 /*===============Section Le splus populaires===============*/
 .populaire {
-  background-color: #808080;
+  border-radius: 25px;
+  background-color: #f2f2f2;
   margin: 0px 200px 0px 30px;
   width: 20%;
   padding: 30px;
