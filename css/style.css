@@ -1,54 +1,38 @@
 /*===============Header===============*/
-.enveloppe {
-  margin: 15px;
-}
-
-.ligne {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.colonne1 {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-.colonne2 {
-  display: flex;
-  justify-content: flex-end;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-.colonne-verte {
+.haut-de-page {
   display: flex;
   justify-content: space-between;
-  height: 100px;
-  padding: 20px;
+  padding: 0 1rem;
 }
 
-.colonne-verte.sinscrire a {
+.conteneur-liens a {
+  padding-top: 2.5rem;
+  border-top: 2px solid transparent;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+}
+
+.conteneur-liens a:hover {
+  color: #0065fc;
+  border-top-color: #0065fc;
+}
+
+.conteneur-liens .lien-sinscrire {
   font-weight: bold;
   color: #0065fc;
 }
 
-header img {
-  max-width: 12.5%;
+.conteneur-logo {
+  display: flex;
+  align-content: end;
 }
 
-header div a {
-  text-decoration: none;
-  padding: 0;
-  color: black;
-}
-
-header div a:hover {
-  text-decoration: underline;
-  color: #0065fc;
+.conteneur-logo img {
+  height: 67.5px;
+  width: 117.5px;
 }
 
 /*===============Body===============*/
@@ -66,6 +50,7 @@ nav ul li {
 /*===============Section hébergement===============*/
 
 body img {
+  justify-content: center;
   width: 30%;
 }
 
