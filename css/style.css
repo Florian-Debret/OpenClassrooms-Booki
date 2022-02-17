@@ -37,8 +37,11 @@
 
 /*===============Body===============*/
 body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
   font-family: "Raleway", sans-serif;
-  margin: 0;
 }
 /*===============Liens===============*/
 
