@@ -36,6 +36,18 @@
   width: 117.5px;
 }
 
+/*===============Nav===============*/
+.recherche {
+  background: #0065fc;
+  padding: none;
+  margin: none;
+}
+
+.filtres {
+  display: flex;
+  flex-direction: column;
+}
+
 /*===============Body===============*/
 
 #page {
@@ -48,14 +60,105 @@
 
 /*===============Nav===============*/
 
+.bloc {
+  flex-direction: row;
+}
+
+.titre {
+  background-color: lightBlue;
+  padding: 0%;
+  margin: 0%;
+}
+
+.recherche {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  max-height: 3rem;
+}
+
+.fa-location-dot {
+  width: 1%;
+  background-color: grey;
+  padding: 1rem;
+  border-radius: 1rem 0 0 1rem;
+  align-items: center;
+}
+
+.recherche-bloc {
+  width: 10%;
+  background-color: #0065fc;
+  color: white;
+  padding: 1rem;
+  margin: 0%;
+  border-radius: 0 1rem 1rem 0;
+  text-align: center;
+}
+
+.filtres {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+}
+
+.filtres-list {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 2rem;
+}
+
+.filtres-list ul {
+  justify-content: space-between;
+  padding: none;
+  margin: none;
+}
+
+li {
+  list-style: none;
+  padding: none;
+  margin: none;
+}
+
+.information {
+  background-color: violet;
+  display: flex;
+  flex-direction: row;
+}
+
+.filtres ul i {
+  color: #0065fc;
+  background-color: gray;
+  border-radius: 5rem;
+}
+
+.fa-circle-info {
+  color: #0065fc;
+  background-color: gray;
+  border-radius: 3rem;
+  max-width: 3rem;
+}
+
 nav ul li {
   list-style-type: none;
 }
 
+.center {
+}
+
 /*===============Section hébergement===============*/
 
-h1 {
-  padding: 25px;
+.infobulle_1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sous-titre {
+  width: 100%;
 }
 
 .conteur {
@@ -64,21 +167,22 @@ h1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-right: 20px;
+  margin: 15px;
 }
 
 .bloc {
+  justify-content: space-around;
   background: white;
-  height: 320px;
-  width: 300px;
+  min-height: 100px;
+  min-width: 100px;
   border-radius: 20px;
-  padding: 10px;
-  margin: 10%;
 }
 
-img {
+.conteur img {
+  max-width: 300px;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
 }
 
 .test {
@@ -88,13 +192,37 @@ img {
   margin-right: 15px;
 }
 
+.photos {
+  margin: 0.5rem;
+  max-height: 10px;
+}
+
+.legends p {
+  margin: 5px 0 5px 0;
+}
 /*===============Section Le splus populaires===============*/
 
-.populaire {
+#populaire {
   border-radius: 25px;
-  background-color: #f2f2f2;
+  background-color: grey;
   margin: 0px 200px 0px 30px;
   width: 20%;
+  padding: 30px;
+}
+
+#populaire img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 1rem 0 0 1rem;
+  object-fit: cover;
+}
+/*===============Section Le splus populaires===============*/
+
+#activites {
+  border-radius: 25px;
+  background-color: grey;
+  margin: 10px 200px 10px 30px;
+  width: 100%;
   padding: 30px;
 }
 
@@ -138,4 +266,12 @@ footer section a {
 
 .flex {
   flex-grow: 1;
+}
+
+.fa-star {
+  color: #0065fc;
+}
+
+.fa-star-half-stroke {
+  color: #0065fc;
 }
