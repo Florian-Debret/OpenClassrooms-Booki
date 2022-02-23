@@ -66,18 +66,20 @@ a {
 
 /*===============Nav===============*/
 
+.navigations-main * {
+  border: solid 1px red;
+}
+
 .bloc {
   flex-direction: row;
 }
 
 .titre {
-  background-color: lightBlue;
   padding: 0%;
   margin: 0%;
 }
 
 .recherche {
-  background-color: red;
   display: flex;
   flex-direction: row;
   max-height: 3rem;
@@ -85,7 +87,6 @@ a {
 
 .fa-location-dot {
   width: 1%;
-  background-color: grey;
   padding: 1rem;
   border-radius: 1rem 0 0 1rem;
   align-items: center;
@@ -102,13 +103,11 @@ a {
 }
 
 .filtres {
-  background-color: green;
   display: flex;
   flex-direction: row;
 }
 
 .filtres-list {
-  background-color: green;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -129,7 +128,6 @@ li {
 }
 
 .information {
-  background-color: violet;
   display: flex;
   flex-direction: row;
 }
