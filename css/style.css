@@ -170,7 +170,7 @@ nav ul li {
   flex-direction: column;
 }
 
-section h1 {
+section h2 {
   margin: 0;
 }
 
@@ -241,6 +241,7 @@ aside .bloc-blanc-pop {
 }
 
 aside a {
+  display: flex;
   width: 100%;
   min-height: 130px;
   max-height: 130px;
@@ -248,7 +249,7 @@ aside a {
 
 aside figure {
   display: flex;
-  margin: 0;
+  margin: 10px 0 0 0;
   max-width: 100%;
   background-color: white;
   border-radius: 15px;
@@ -325,4 +326,14 @@ footer section a {
 
 .fa-star-half-stroke {
   color: #0065fc;
+}
+
+/*===============Copiright===============*/
+
+.signature {
+  background-color: lightgray;
+}
+
+.copiright img {
+  width: 0.5%;
 }
