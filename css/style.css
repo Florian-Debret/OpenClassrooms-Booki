@@ -42,18 +42,6 @@ a {
   width: 117.5px;
 }
 
-/*===============Nav===============*/
-.recherche {
-  background: #0065fc;
-  padding: none;
-  margin: none;
-}
-
-.filtres {
-  display: flex;
-  flex-direction: column;
-}
-
 /*===============Body===============*/
 
 #page {
@@ -92,7 +80,7 @@ a {
   align-items: center;
 }
 
-.recherche-bloc {
+.recherche .bloc {
   width: 10%;
   background-color: #0065fc;
   color: white;
