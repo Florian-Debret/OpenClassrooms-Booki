@@ -35,35 +35,37 @@
           <p>En plein centre ville ou en pleine nature</p>
         </div>
 
-        <div class="recherche">
+        <form method="post">
           <i class="fa-solid fa-location-dot"></i>
-          <input
-            class="barre-de-recherche"
-            type="text"
-            placeholder="Marseille, France"
-          /><!--inséré un bloc prédéféni avec center est texte gris plus quand click disparait-->
-          <div class="recherche bloc"><strong>recherche</strong></div>
-          <!--inséré le bloc de fond + la couleurs et les arrondis-->
-        </div>
+          <label>
+            <input
+              class="textinput"
+              name="submitted-name"
+              autocomplete="name"
+              placeholder="Marseille, France"
+            />
+          </label>
+          <button class="boutton">recherche</button>
+        </form>
 
         <div class="filtres">
           <h2>Filtres</h2>
           <ul class="filtres-list">
             <li>
               <i class="fa-solid fa-money-bill-wave"></i>
-              <span call="center">Économique</span>
+              <span>Économique</span>
             </li>
             <li>
               <i class="fa-solid fa-child"></i>
-              <p>Familial</p>
+              <span>Familial</span>
             </li>
             <li>
               <i class="fa-solid fa-heart"></i>
-              <p>Romantique</p>
+              <span>Romantique</span>
             </li>
             <li>
               <i class="fa-solid fa-dog"></i>
-              <p>autorisés</p>
+              <span>autorisés</span>
             </li>
           </ul>
         </div>

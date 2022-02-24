@@ -53,13 +53,33 @@ a {
 /*===============Liens===============*/
 
 /*===============Nav===============*/
-
-.navigations-main * {
+/* 
+.filtres * {
   border: solid 1px red;
+} */
+
+form {
+  display: flex;
 }
 
-.bloc {
-  flex-direction: row;
+.fa-location-dot {
+  padding: 1rem;
+  border-radius: 1rem 0 0 1rem;
+  align-items: center;
+  background-color: lightgray;
+  boreder: none;
+}
+
+.boutton {
+  background-color: #0065fc;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.textinput {
+  padding: 1rem 10px;
 }
 
 .titre {
@@ -67,25 +87,12 @@ a {
   margin: 0%;
 }
 
-.recherche {
-  display: flex;
-  flex-direction: row;
-  max-height: 3rem;
-}
-
-.fa-location-dot {
-  width: 1%;
-  padding: 1rem;
-  border-radius: 1rem 0 0 1rem;
-  align-items: center;
-  background-color: lightgray;
-}
-
 .recherche input {
   padding: 0 1rem;
 }
 
 .recherche .bloc {
+  border: solid 1px red;
   background-color: #0065fc;
   color: white;
   padding: 1rem;
@@ -101,15 +108,12 @@ a {
 
 .filtres-list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-height: 2rem;
 }
 
 .filtres-list ul {
-  justify-content: space-between;
-  padding: none;
+  padding: 0;
   margin: none;
 }
 
@@ -127,7 +131,7 @@ li {
 .filtres ul i {
   color: #0065fc;
   background-color: gray;
-  border-radius: 5rem;
+  border-radius: 10rem;
 }
 
 .fa-circle-info {
@@ -225,9 +229,10 @@ article p {
 
 aside .bloc-blanc-pop {
   display: flex;
-  border: 1px solid red;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid red;
+  flex-direction: column;
 }
 
 aside a {
