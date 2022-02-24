@@ -4,6 +4,10 @@ a {
   color: black;
 }
 
+body {
+  margin: 0;
+}
+
 /*===============Header===============*/
 
 .haut-de-page {
@@ -67,7 +71,7 @@ form {
   border-radius: 1rem 0 0 1rem;
   align-items: center;
   background-color: lightgray;
-  boreder: none;
+  border: none;
 }
 
 .boutton {
@@ -89,6 +93,10 @@ form {
 
 .recherche input {
   padding: 0 1rem;
+  border: 1px solid lightgray;
+  border-left: none;
+  border-right: none;
+  height: 100%;
 }
 
 .recherche .bloc {
@@ -128,12 +136,6 @@ li {
   flex-direction: row;
 }
 
-.filtres ul i {
-  color: #0065fc;
-  background-color: gray;
-  border-radius: 10rem;
-}
-
 .fa-circle-info {
   color: #0065fc;
   background-color: gray;
@@ -143,6 +145,30 @@ li {
 
 nav ul li {
   list-style-type: none;
+}
+
+.cercle-gris-test {
+  display: inline-flex;
+  border: 1px solid #a19b9b;
+  border-radius: 1rem;
+  height: 30px;
+  align-items: center;
+}
+
+.cercle-gris-test span {
+  display: inline-block;
+  padding: 0 2rem 0 1rem;
+}
+
+.cercle-bleu {
+  display: inline-flex;
+  color: #0065fc;
+  background-color: #98b5e0;
+  border-radius: 1rem;
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*===============Section hébergement===============*/
@@ -229,10 +255,10 @@ article p {
 
 aside .bloc-blanc-pop {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid red;
-  flex-direction: column;
+  margin-top: 1rem;
 }
 
 aside a {
@@ -243,8 +269,8 @@ aside a {
 }
 
 aside figure {
+  margin: 0;
   display: flex;
-  margin: 10px 0 0 0;
   max-width: 100%;
   background-color: white;
   border-radius: 15px;
@@ -261,16 +287,16 @@ aside p {
   object-fit: cover;
 }
 
+#populaire figcaption {
+  padding: 0 0 0 15px;
+}
+
+/*===============Acctivitées===============*/
+
 #activites {
   border-radius: 25px;
   background-color: grey;
-  margin: 10px 200px 10px 30px;
-  width: 100%;
   padding: 30px;
-}
-
-#populaire figcaption {
-  padding: 0 0 0 15px;
 }
 
 /*===============Footer===============*/

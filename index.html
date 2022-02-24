@@ -35,12 +35,13 @@
           <p>En plein centre ville ou en pleine nature</p>
         </div>
 
-        <form method="post">
+        <form class="recherche" method="get">
           <i class="fa-solid fa-location-dot"></i>
           <label>
             <input
+              type="search"
               class="textinput"
-              name="submitted-name"
+              name="Ville"
               autocomplete="name"
               placeholder="Marseille, France"
             />
@@ -51,8 +52,10 @@
         <div class="filtres">
           <h2>Filtres</h2>
           <ul class="filtres-list">
-            <li>
-              <i class="fa-solid fa-money-bill-wave"></i>
+            <li class="cercle-gris-test">
+              <div class="cercle-bleu">
+                <i class="fa-solid fa-money-bill-wave"></i>
+              </div>
               <span>Économique</span>
             </li>
             <li>
@@ -272,7 +275,7 @@
         </aside>
       </section>
 
-      <section id="activites">
+      <section class="activites" id="activites">
         <h2>Activités à Marseille</h2>
         <divs>
           <img src="images/activites/small/vieux-port_s.jpg" />
