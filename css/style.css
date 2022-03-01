@@ -66,6 +66,10 @@ form {
   display: flex;
 }
 
+nav ul li {
+  list-style-type: none;
+}
+
 .fa-location-dot {
   padding: 1rem;
   border-radius: 1rem 0 0 1rem;
@@ -80,6 +84,8 @@ form {
   padding: 1rem;
   border: none;
   border-radius: 0 1rem 1rem 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
 }
 
 .textinput {
@@ -93,14 +99,16 @@ form {
 
 .recherche input {
   padding: 0 1rem;
-  border: 1px solid lightgray;
+  border: 1px solid #f2f2f2;
   border-left: none;
   border-right: none;
   height: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .recherche .bloc {
-  border: solid 1px red;
   background-color: #0065fc;
   color: white;
   padding: 1rem;
@@ -125,28 +133,6 @@ form {
   margin: none;
 }
 
-li {
-  list-style: none;
-  padding: none;
-  margin: none;
-}
-
-.information {
-  display: flex;
-  flex-direction: row;
-}
-
-.fa-circle-info {
-  color: #0065fc;
-  background-color: gray;
-  border-radius: 3rem;
-  max-width: 3rem;
-}
-
-nav ul li {
-  list-style-type: none;
-}
-
 .cercle-gris-test {
   display: inline-flex;
   border: 1px solid #a19b9b;
@@ -160,6 +146,12 @@ nav ul li {
   padding: 0 2rem 0 1rem;
 }
 
+li {
+  list-style: none;
+  padding: none;
+  margin: none;
+}
+
 .cercle-bleu {
   display: inline-flex;
   color: #0065fc;
@@ -169,6 +161,20 @@ nav ul li {
   width: 30px;
   align-items: center;
   justify-content: center;
+}
+
+.cercle-information {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+}
+
+.fa-info {
+  border: 1px solid red;
+  color: #0065fc;
+  background-color: gray;
+  border-radius: 7rem;
+  max-width: 7rem;
 }
 
 /*===============Section hébergement===============*/
@@ -185,7 +191,7 @@ nav ul li {
   width: 65%;
   border-radius: 30px;
   padding: 25px;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -318,10 +324,6 @@ footer li {
   margin-bottom: 1rem;
 }
 
-footer li a:hover {
-  text-decoration: underline;
-}
-
 footer section {
   align-items: center;
   display: flex;
@@ -352,9 +354,17 @@ footer section a {
 /*===============Copiright===============*/
 
 .signature {
+  display: flex;
+  flex-direction: row;
   background-color: lightgray;
 }
 
 .copiright img {
+  display: flex;
   width: 0.5%;
+  margin: 0;
+}
+
+.signature p {
+  margin: , 0;
 }

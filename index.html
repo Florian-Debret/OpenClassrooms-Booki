@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,7 +47,9 @@
               placeholder="Marseille, France"
             />
           </label>
-          <button class="boutton">recherche</button>
+          <button class="boutton">
+            <strong>Rechercher</strong>
+          </button>
         </form>
 
         <div class="filtres">
@@ -59,22 +62,28 @@
               <span>Économique</span>
             </li>
             <li>
-              <i class="fa-solid fa-child"></i>
+              <div class="cercle-bleu">
+                <i class="fa-solid fa-child"></i>
+              </div>
               <span>Familial</span>
             </li>
             <li>
-              <i class="fa-solid fa-heart"></i>
+              <div class="cercle-bleu">
+                <i class="fa-solid fa-heart"></i>
+              </div>
               <span>Romantique</span>
             </li>
             <li>
-              <i class="fa-solid fa-dog"></i>
+              <div class="cercle-bleu">
+                <i class="fa-solid fa-dog"></i>
+              </div>
               <span>autorisés</span>
             </li>
           </ul>
         </div>
 
-        <div class="information">
-          <i class="fa-solid fa-circle-info"></i>
+        <div class="cercle-information">
+          <i class="fa-solid fa-info"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </nav>
@@ -277,30 +286,35 @@
 
       <section class="activites" id="activites">
         <h2>Activités à Marseille</h2>
-        <divs>
+        <figure>
           <img src="images/activites/small/vieux-port_s.jpg" />
-          <h3>Vieux Port</h3>
-        </divs>
-        <divs>
+          <figcaption><strong>Vieux Port</strong></figcaption>
+        </figure>
+
+        <figure>
           <img src="images/activites/small/fort-de-pomegues_s.jpg" />
-          <h3>Fort de Pomèges</h3>
-        </divs>
-        <divs>
+          <figcaption><strong>Fort de Pomèges</strong></figcaption>
+        </figure>
+
+        <figure>
           <img src="images/activites/small/ile-du-frioul_s.jpg" />
-          <h3>Ile du Frioul</h3>
-        </divs>
-        <divs>
+          <figcaption><strong>Ile du Frioul</strong></figcaption>
+        </figure>
+
+        <figure>
           <img src="images/activites/small/parc-national-des-calanques_s.jpg" />
-          <h3>Parc national des Calanques</h3>
-        </divs>
-        <div>
+          <figcaption><strong>Parc national des Calanques</strong></figcaption>
+        </figure>
+
+        <figure>
           <img src="images/activites/small/notre-dame-de-la-garde_s.jpg" />
-          <h3>Notre-Dame-de-la-Garde</h3>
-        </div>
-        <div>
+          <figcaption><strong>Notre-Dame-de-la-Garde</strong></figcaption>
+        </figure>
+
+        <figure>
           <img src="images/activites/small/palais-longchamp_s.jpg" />
-          <h3>Parc Longchamps</h3>
-        </div>
+          <figcaption><strong>Parc Longchamps</strong></figcaption>
+        </figure>
       </section>
     </div>
 
@@ -351,10 +365,10 @@
 
     <section class="signature">
       <div class="copiright">
-        Florian Debret
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/All_rights_reserved_logo.svg/1200px-All_rights_reserved_logo.svg.png"
         />
+        <div>Florian Debret</div>
       </div>
     </section>
   </body>
