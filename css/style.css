@@ -1,19 +1,40 @@
+/*=====================================*/
 /*===============Général===============*/
+/*=====================================*/
 a {
   text-decoration: none;
   color: black;
 }
 
 body {
-  margin: 0;
+  width: 90%;
+  margin: auto;
 }
 
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*==================================*/
+/*===============Body===============*/
+/*==================================*/
+
+#page {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+
+/*====================================*/
 /*===============Header===============*/
+/*====================================*/
 
 .haut-de-page {
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem;
 }
 
 .conteneur-liens a {
@@ -31,36 +52,28 @@ body {
   border-top-color: #0065fc;
 }
 
-.conteneur-liens .lien-sinscrire {
-  font-weight: bold;
-  color: #0065fc;
-}
-
 .conteneur-logo {
   display: flex;
   align-content: end;
 }
 
 .conteneur-logo img {
-  height: 67.5px;
-  width: 117.5px;
+  max-height: 45px;
+  width: 100%;
+  margin: 45px 0 0 0;
 }
 
-/*===============Body===============*/
-
-#page {
-  width: 80%;
-  margin: auto;
-  text-align: justify;
-  font-family: "Raleway", sans-serif;
-}
-/*===============Liens===============*/
-
+/*=================================*/
 /*===============Nav===============*/
-/* 
-.filtres * {
-  border: solid 1px red;
-} */
+/*=================================*/
+
+.navigations-main h1 {
+  margin: 50px 0 0 0;
+}
+
+.navigations-main p {
+  margin: 12px 0 19px 0;
+}
 
 form {
   display: flex;
@@ -70,11 +83,12 @@ nav ul li {
   list-style-type: none;
 }
 
-.fa-location-dot {
-  padding: 1rem;
-  border-radius: 1rem 0 0 1rem;
+.fa-location-dot::before {
+  display: flex;
+  padding: 18px 20px 18px 20px;
+  border-radius: 13px 0 0 13px;
   align-items: center;
-  background-color: lightgray;
+  background-color: #f2f2f2;
   border: none;
 }
 
@@ -108,61 +122,70 @@ nav ul li {
   font-size: 1rem;
 }
 
-.recherche .bloc {
-  background-color: #0065fc;
-  color: white;
-  padding: 1rem;
-  margin: 0%;
-  border-radius: 0 1rem 1rem 0;
-  align-items: center;
-}
-
 .filtres {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+
+.filtres h2 {
+  text-align: center;
+  padding: 0 34px 0 0;
 }
 
 .filtres-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0;
 }
 
-.filtres-list ul {
-  padding: 0;
-  margin: none;
-}
-
-.cercle-gris-test {
+.cercle-gris {
   display: inline-flex;
-  border: 1px solid #a19b9b;
-  border-radius: 1rem;
-  height: 30px;
+  max-height: 49px;
+  border: 2px solid #f2f2f2;
+  border-radius: 6666px;
   align-items: center;
+  margin: 0 34px 0 0;
 }
 
-.cercle-gris-test span {
+.cercle-gris span {
   display: inline-block;
-  padding: 0 2rem 0 1rem;
+  padding: 0 21px 0 15px;
 }
 
 li {
   list-style: none;
-  padding: none;
-  margin: none;
 }
 
 .cercle-bleu {
   display: inline-flex;
   color: #0065fc;
-  background-color: #98b5e0;
-  border-radius: 1rem;
-  height: 30px;
-  width: 30px;
+  background-color: #deebff;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
   align-items: center;
   justify-content: center;
 }
 
+.cercle-information {
+  display: flex;
+  align-items: center;
+  padding: 34px 0 34px 0;
+}
+
+.fa-info {
+  border: 2px solid #f2f2f2;
+  color: #0065fc;
+  border-radius: 30px;
+  margin-right: 12px;
+  padding: 4px 10px 4px 10px;
+}
+
+.cercle-information p {
+  margin: 0;
+}
+
+/* 
 .cercle-information {
   border: 1px solid red;
   display: flex;
@@ -175,29 +198,35 @@ li {
   background-color: gray;
   border-radius: 7rem;
   max-width: 7rem;
-}
+} */
 
+/*=================================================*/
 /*===============Section hébergement===============*/
+/*=================================================*/
 
 .allignement {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-height: ;
 }
 
 .bloc-gris {
-  background: #c9c4c4;
-  width: 65%;
+  background: #f2f2f2;
   border-radius: 30px;
   padding: 25px;
+  margin: 0 20px 0 0;
   font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
+  flex-grow: 2;
 }
 
 section h2 {
   margin: 0;
+}
+
+section h3 {
+  margin: 30px 0 30px 0;
 }
 
 article .infobulle {
@@ -207,20 +236,20 @@ article .infobulle {
   justify-content: space-between;
 }
 
-article figure {
+.allignement article a {
+  height: 200px;
+}
+
+.allignement article figure {
+  width: 248px;
   padding: 5px;
   background-color: white;
   border-radius: 15px;
   margin: 0;
+  box-shadow: 1px 1px 30px rgb(117, 112, 112);
 }
 
-article a {
-  max-width: 31%;
-  min-width: 31%;
-  height: 200px;
-}
-
-article figure img {
+.allignement article figure img {
   width: 100%;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
@@ -240,23 +269,26 @@ article p {
 }
 
 #empty {
-  color: #c9c4c4;
+  color: #f2f2f2;
 }
 
 .stars {
   margin: 0 0 05px 0;
 }
 
+/*=========================================================*/
 /*===============Section Le splus populaires===============*/
+/*=========================================================*/
 
-#populaire {
+.populaire {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   border-radius: 25px;
-  background: #c9c4c4;
-  width: 25%;
+  background: #f2f2f2;
+  max-width: 420px;
   padding: 30px;
-  margin: 0;
+  margin: 0 0 0 20px;
 }
 
 aside .bloc-blanc-pop {
@@ -281,38 +313,165 @@ aside figure {
   background-color: white;
   border-radius: 15px;
   padding: 5px;
+  box-shadow: 1px 1px 10px rgb(117, 112, 112);
 }
 
 aside p {
   margin: 0 0 05px 0;
 }
 
-#populaire img {
+.populaire img {
   width: 40%;
   border-radius: 10px 0 0 10px;
   object-fit: cover;
 }
 
-#populaire figcaption {
+.populaire figcaption {
   padding: 0 0 0 15px;
 }
 
+/*=========================================*/
 /*===============Acctivitées===============*/
+/*=========================================*/
 
-#activites {
-  border-radius: 25px;
-  background-color: grey;
-  padding: 30px;
+#activites * {
+  border: 1px solid red;
 }
 
+#activites {
+  background-color: grey;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+#activites h2 {
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.grande_image {
+}
+
+.grande_image figure {
+  height: 445px;
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.grande_image figure:hover {
+  box-shadow: lightblue 5px 5px 5px 5px;
+}
+
+.grande_image figure img {
+  height: 390px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.grande_image figcaption {
+  padding: 10px;
+}
+
+/* #activites {
+  display: flex;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+#article {
+  display: flex;
+}
+
+#article figcaption {
+  padding-left: 15px;
+}
+
+.grande_image figure {
+  height: 550px;
+}
+
+.grande_image {
+  width: 25%;
+}
+
+.grande_image img {
+  width: 100%;
+  height: 389px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.petite_image {
+  width: 25%;
+}
+
+.petite_image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.activite_1 {
+  height: 179px;
+}
+
+.activite_1 img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.activite_2 {
+  height: 110px;
+}
+
+.activite_2 img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+#article figcaption {
+  background-color: white;
+  padding: 15px;
+}
+
+#article figure {
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+} */
+
+/* 
+#activites article figure {
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  height: 110px;
+} */
+
+/*====================================*/
 /*===============Footer===============*/
+/*====================================*/
+
 footer {
-  font-family: "Raleway", sans-serif;
-  background-color: lightgray;
+  background-color: #f2f2f2;
   margin: auto;
   display: block 10px 10px 10px 10px;
   padding: 0 1rem;
   display: flex;
+}
+
+footer h3 {
+  margin: 0 0 15px 0;
 }
 
 footer ul {
@@ -335,28 +494,31 @@ footer section a {
   color: black;
 }
 
+footer section a:hover {
+  text-decoration: underline;
+}
+
 .colonne {
   display: flex;
+  padding: 50px 0 0 0;
 }
 
 .flex {
   flex-grow: 1;
 }
 
-.fa-star {
-  color: #0065fc;
-}
-
-.fa-star-half-stroke {
-  color: #0065fc;
-}
-
+/*=======================================*/
 /*===============Copiright===============*/
+/*=======================================*/
+
+.signature * {
+  border: red 1px solid;
+}
 
 .signature {
   display: flex;
   flex-direction: row;
-  background-color: lightgray;
+  background-color: #f2f2f2;
 }
 
 .copiright img {
@@ -366,5 +528,6 @@ footer section a {
 }
 
 .signature p {
-  margin: , 0;
+  display: flex;
+  height: 5px;
 }

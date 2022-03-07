@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/Icones/16x16.png"
+    />
     <script
       src="https://kit.fontawesome.com/4a27981426.js"
       crossorigin="anonymous"
@@ -26,7 +32,6 @@
         <nav class="conteneur-liens">
           <a href="#hebergement">Hébergement</a>
           <a href="#activites">Activités</a>
-          <a class="lien-sinscrire" href="#sinscrire">S'inscrire</a>
         </nav>
       </header>
 
@@ -55,29 +60,29 @@
         <div class="filtres">
           <h2>Filtres</h2>
           <ul class="filtres-list">
-            <li class="cercle-gris-test">
+            <li class="cercle-gris">
               <div class="cercle-bleu">
                 <i class="fa-solid fa-money-bill-wave"></i>
               </div>
-              <span>Économique</span>
+              <span><strong>Économique</strong></span>
             </li>
-            <li>
+            <li class="cercle-gris">
               <div class="cercle-bleu">
                 <i class="fa-solid fa-child"></i>
               </div>
-              <span>Familial</span>
+              <span><strong>Familial</strong></span>
             </li>
-            <li>
+            <li class="cercle-gris">
               <div class="cercle-bleu">
                 <i class="fa-solid fa-heart"></i>
               </div>
-              <span>Romantique</span>
+              <span><strong>Romantique</strong></span>
             </li>
-            <li>
+            <li class="cercle-gris">
               <div class="cercle-bleu">
                 <i class="fa-solid fa-dog"></i>
               </div>
-              <span>autorisés</span>
+              <span><strong>Animaux autorisés</strong></span>
             </li>
           </ul>
         </div>
@@ -223,9 +228,18 @@
               </figure>
             </a>
           </div>
+
+          <div class="Afficher_plus">
+            <a href="#">
+              <h3>
+              Afficher plus
+              </h3>
+            </a>
+          </div>
+         
         </article>
 
-        <aside id="populaire">
+        <aside class="populaire" id="populaire">
           <h2>Les plus populaires</h2>
           <div class="bloc-blanc-pop">
             <a href="#">
@@ -284,37 +298,55 @@
         </aside>
       </section>
 
-      <section class="activites" id="activites">
-        <h2>Activités à Marseille</h2>
-        <figure>
-          <img src="images/activites/small/vieux-port_s.jpg" />
-          <figcaption><strong>Vieux Port</strong></figcaption>
-        </figure>
+      <section id="activites">
+        <div>
+          <h2>Activités à Marseille</h2>
+        </div>
 
-        <figure>
-          <img src="images/activites/small/fort-de-pomegues_s.jpg" />
-          <figcaption><strong>Fort de Pomèges</strong></figcaption>
-        </figure>
+        <div id="article">
+          <div class="grande_image">
+            <figure>
+              <img src="images/activites/small/vieux-port_s.jpg" />
+              <figcaption><strong>Vieux Port</strong></figcaption>
+            </figure>
+          </div>
+<!--
+          <div class="petite_image">
+            <figure class="activite_1">
+              <img src="images/activites/small/fort-de-pomegues_s.jpg" />
+              <figcaption><strong>Fort de Pomèges</strong></figcaption>
+            </figure>
 
-        <figure>
-          <img src="images/activites/small/ile-du-frioul_s.jpg" />
-          <figcaption><strong>Ile du Frioul</strong></figcaption>
-        </figure>
+            <figure class="activite_2">
+              <img src="images/activites/small/ile-du-frioul_s.jpg" />
+              <figcaption><strong>Ile du Frioul</strong></figcaption>
+            </figure>
+          </div>
 
-        <figure>
-          <img src="images/activites/small/parc-national-des-calanques_s.jpg" />
-          <figcaption><strong>Parc national des Calanques</strong></figcaption>
-        </figure>
+          <div class="grande_image">
+            <figure>
+              <img
+                src="images/activites/small/parc-national-des-calanques_s.jpg"
+              />
+              <figcaption>
+                <strong>Parc national des Calanques</strong>
+              </figcaption>
+            </figure>
+          </div>
 
-        <figure>
-          <img src="images/activites/small/notre-dame-de-la-garde_s.jpg" />
-          <figcaption><strong>Notre-Dame-de-la-Garde</strong></figcaption>
-        </figure>
+          <div class="petite_image">
+            <figure class="activite_2">
+              <img src="images/activites/small/notre-dame-de-la-garde_s.jpg" />
+              <figcaption><strong>Notre-Dame-de-la-Garde</strong></figcaption>
+            </figure>
 
-        <figure>
-          <img src="images/activites/small/palais-longchamp_s.jpg" />
-          <figcaption><strong>Parc Longchamps</strong></figcaption>
-        </figure>
+            <figure class="activite_1">
+              <img src="images/activites/small/palais-longchamp_s.jpg" />
+              <figcaption><strong>Parc Longchamps</strong></figcaption>
+            </figure>
+          </div>
+        </div>
+        -->
       </section>
     </div>
 
@@ -324,15 +356,15 @@
           <h3>A propos</h3>
           <ul>
             <li>
-              <a href="Fonctionnement du site">Fonctionnement du site</a>
+              <a href="Fonctionnement_du_site">Fonctionnement du site</a>
             </li>
             <li>
-              <a href="Conditions générales de vente"
+              <a href="Conditions_générales_de_vente"
                 >Conditions générales de vente</a
               >
             </li>
             <li>
-              <a href="Données et confidentialités"
+              <a href="Données_et_confidentialités"
                 >Données et confidentialités</a
               >
             </li>
@@ -344,9 +376,9 @@
         <div>
           <h3>Nos hébergements</h3>
           <ul>
-            <li><a href="Chartes qualité">Chartes qualité</a></li>
+            <li><a href="Chartes_qualité">Chartes qualité</a></li>
             <li>
-              <a href="Soumettre votre hotel">Soumettre votre hôtel</a>
+              <a href="Soumettre_votre_hotel">Soumettre votre hôtel</a>
             </li>
           </ul>
         </div>
@@ -356,8 +388,8 @@
         <div>
           <h3>Assistance</h3>
           <ul>
-            <li><a href="Centre d'aide">Centre d'aide</a></li>
-            <li><a href="Nous contacter">Nous contacter</a></li>
+            <li><a href="Centre_d'aide">Centre d'aide</a></li>
+            <li><a href="Nous_contacter">Nous contacter</a></li>
           </ul>
         </div>
       </section>
@@ -368,7 +400,7 @@
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/All_rights_reserved_logo.svg/1200px-All_rights_reserved_logo.svg.png"
         />
-        <div>Florian Debret</div>
+        <p>Florian Debret</p>
       </div>
     </section>
   </body>
