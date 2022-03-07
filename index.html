@@ -60,29 +60,41 @@
         <div class="filtres">
           <h2>Filtres</h2>
           <ul class="filtres-list">
-            <li class="cercle-gris">
-              <div class="cercle-bleu">
-                <i class="fa-solid fa-money-bill-wave"></i>
-              </div>
-              <span><strong>Économique</strong></span>
+            <li>
+              <input type="checkbox" id="economique" style="" class="filtre" />
+              <label class="cercle-gris" for="economique">
+                <div class="cercle-bleu">
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                </div>
+                <span><strong>Économique</strong></span>
+              </label>
             </li>
-            <li class="cercle-gris">
-              <div class="cercle-bleu">
-                <i class="fa-solid fa-child"></i>
-              </div>
-              <span><strong>Familial</strong></span>
+            <li>
+              <input type="checkbox" id="familial" style="" class="filtre" />
+              <label class="cercle-gris" for="familial">
+                <div class="cercle-bleu">
+                  <i class="fa-solid fa-child"></i>
+                </div>
+                <span><strong>Familial</strong></span>
+              </label>
             </li>
-            <li class="cercle-gris">
-              <div class="cercle-bleu">
-                <i class="fa-solid fa-heart"></i>
-              </div>
-              <span><strong>Romantique</strong></span>
+            <li>
+              <input type="checkbox" id="romantique" style="" class="filtre" />
+              <label class="cercle-gris" for="romantique">
+                <div class="cercle-bleu">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <span><strong>Romantique</strong></span>
+              </label>
             </li>
-            <li class="cercle-gris">
-              <div class="cercle-bleu">
-                <i class="fa-solid fa-dog"></i>
-              </div>
-              <span><strong>Animaux autorisés</strong></span>
+            <li>
+              <input type="checkbox" id="animaux" style="" class="filtre" />
+              <label class="cercle-gris" for="animaux">
+                <div class="cercle-bleu">
+                  <i class="fa-solid fa-dog"></i>
+                </div>
+                <span><strong>Animaux autorisés</strong></span>
+              </label>
             </li>
           </ul>
         </div>
@@ -231,12 +243,9 @@
 
           <div class="Afficher_plus">
             <a href="#">
-              <h3>
-              Afficher plus
-              </h3>
+              <h3>Afficher plus</h3>
             </a>
           </div>
-         
         </article>
 
         <aside class="populaire" id="populaire">
@@ -310,7 +319,8 @@
               <figcaption><strong>Vieux Port</strong></figcaption>
             </figure>
           </div>
-<!--
+        </div>
+        <!--
           <div class="petite_image">
             <figure class="activite_1">
               <img src="images/activites/small/fort-de-pomegues_s.jpg" />
