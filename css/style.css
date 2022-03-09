@@ -259,11 +259,12 @@ article .infobulle {
 }
 
 .allignement article a {
+  min-width: 30%;
+  max-width: 30%;
   height: 200px;
 }
 
 .allignement article figure {
-  width: 248px;
   padding: 5px;
   background-color: white;
   border-radius: 15px;
@@ -322,8 +323,9 @@ article p {
 }
 
 .titre_logo i {
-  font-size: 35px;
-  color: ;
+  font-size: 25px;
+  color: #0065fc;
+  text-align: center;
 }
 
 aside .bloc-blanc-pop {
