@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and resolution"
+      href="css/@media_queries.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,17 +21,16 @@
       sizes="16x16"
       href="images/Icones/16x16.png"
     />
+
+    <link
+      rel="dns-prefetch"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
-    <script
-      src="https://kit.fontawesome.com/4a27981426.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Booki</title>
   </head>
 
@@ -49,7 +53,7 @@
         </div>
 
         <form class="recherche" method="get">
-          <i class="fa-solid fa-location-dot"></i>
+          <i class="fas fa-map-marker-alt"></i>
           <label>
             <input
               type="search"
@@ -71,7 +75,7 @@
               <input type="checkbox" id="economique" class="filtre" />
               <label class="cercle-gris" for="economique">
                 <div class="cercle-bleu">
-                  <i class="fa-solid fa-money-bill-wave"></i>
+                  <i class="fas fa-money-bill-wave"></i>
                 </div>
                 <span><strong>Économique</strong></span>
               </label>
@@ -80,7 +84,7 @@
               <input type="checkbox" id="familial" class="filtre" />
               <label class="cercle-gris" for="familial">
                 <div class="cercle-bleu">
-                  <i class="fa-solid fa-child"></i>
+                  <i class="fas fa-child"></i>
                 </div>
                 <span><strong>Familial</strong></span>
               </label>
@@ -89,7 +93,7 @@
               <input type="checkbox" id="romantique" class="filtre" />
               <label class="cercle-gris" for="romantique">
                 <div class="cercle-bleu">
-                  <i class="fa-solid fa-heart"></i>
+                  <i class="fas fa-heart"></i>
                 </div>
                 <span><strong>Romantique</strong></span>
               </label>
@@ -98,7 +102,7 @@
               <input type="checkbox" id="animaux" class="filtre" />
               <label class="cercle-gris" for="animaux">
                 <div class="cercle-bleu">
-                  <i class="fa-solid fa-dog"></i>
+                  <i class="fas fa-dog"></i>
                 </div>
                 <span><strong>Animaux autorisés</strong></span>
               </label>
@@ -107,7 +111,7 @@
         </div>
 
         <div class="cercle-information">
-          <i class="fa-solid fa-info"></i>
+          <i class="fas fa-info"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </nav>
@@ -318,11 +322,11 @@
         </aside>
       </section>
 
-      <section class="activites">
+      <section class="activites" id="activites">
         <h2>Activités à Marseille</h2>
 
         <div class="article">
-          <div class="grande_image">
+          <div class="grande_image effet">
             <figure>
               <img src="images/activites/small/vieux-port_s.jpg" />
               <figcaption><strong>Vieux Port</strong></figcaption>
@@ -330,18 +334,18 @@
           </div>
 
           <div class="petite_image">
-            <figure class="activite_1">
+            <figure class="activite_1 effet">
               <img src="images/activites/small/fort-de-pomegues_s.jpg" />
               <figcaption><strong>Fort de Pomèges</strong></figcaption>
             </figure>
 
-            <figure class="activite_2">
+            <figure class="activite_2 effet">
               <img src="images/activites/small/ile-du-frioul_s.jpg" />
               <figcaption><strong>Ile du Frioul</strong></figcaption>
             </figure>
           </div>
 
-          <div class="grande_image">
+          <div class="grande_image effet">
             <figure>
               <img
                 src="images/activites/small/parc-national-des-calanques_s.jpg"
@@ -353,12 +357,12 @@
           </div>
 
           <div class="petite_image">
-            <figure class="activite_2">
+            <figure class="activite_2 effet">
               <img src="images/activites/small/notre-dame-de-la-garde_s.jpg" />
               <figcaption><strong>Notre-Dame-de-la-Garde</strong></figcaption>
             </figure>
 
-            <figure class="activite_1">
+            <figure class="activite_1 effet">
               <img src="images/activites/small/palais-longchamp_s.jpg" />
               <figcaption><strong>Parc Longchamps</strong></figcaption>
             </figure>
@@ -412,13 +416,8 @@
       </section>
     </footer>
 
-    <section class="signature">
-      <div class="copiright">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/All_rights_reserved_logo.svg/1200px-All_rights_reserved_logo.svg.png"
-        />
-        <p>Florian Debret</p>
-      </div>
+    <section class="copyright">
+      <p><strong>© Florian Debret</strong></p>
     </section>
   </body>
 </html>

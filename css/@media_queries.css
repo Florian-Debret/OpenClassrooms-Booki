@@ -1,0 +1,22 @@
+/* @media all and (max-width: 768px) {
+  #page {
+    width: 768px;
+    margin: auto;
+    text-align: justify;
+    margin: 50px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header img {
+    margin: auto;
+  }
+
+  .filtres-list {
+    display: flex;
+    flex-direction: column;
+  }
+} */
