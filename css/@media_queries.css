@@ -1,9 +1,193 @@
-/* @media all and (max-width: 768px) {
+@media screen and (min-width: 1px) and (max-width: 992px) {
+  /*=====================================*/
+  /*===============Body===============*/
+  /*=====================================*/
   #page {
-    width: 768px;
+    margin: 0;
+    text-align: justify;
+    color: red;
+  }
+
+  /*====================================*/
+  /*===============Header===============*/
+  /*====================================*/
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .conteneur-logo img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-height: 70px;
+    width: auto;
+  }
+
+  /*=================================*/
+  /*===============Nav===============*/
+  /*=================================*/
+  nav a {
+    margin: 35px;
+    border-top: 0;
+    border-bottom: 2px solid transparent;
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+  }
+
+  nav .conteneur-liens {
+    display: flex;
+    justify-content: center;
+  }
+
+  .filtres-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigations-main {
+    margin: 20px;
+  }
+
+  /*=================================================*/
+  /*===============Section hébergement===============*/
+  /*=================================================*/
+  .allignement {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .bloc-gris {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+  }
+
+  .infobulle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infobulle a figure {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*=========================================================*/
+  /*===============Section Le splus populaires===============*/
+  /*=========================================================*/
+  .populaire {
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  aside figure {
+    margin: 5px 0;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
+  .bloc-blanc-pop img {
+    border-radius: 15px 0 0 15px;
+  }
+
+  .titre_logo {
+    margin: 20px 0 0 0;
+  }
+
+  /*=========================================*/
+  /*===============Activitées===============*/
+  /*=========================================*/
+
+  .activites {
+    padding: 0 20px;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article figure {
+    margin: 10px 0;
+  }
+
+  .article img {
+    max-height: 134px;
+    min-height: 134px;
+  }
+
+  .petite_image {
+    width: auto;
+  }
+
+  .grande_image {
+    width: auto;
+  }
+
+  .activite_1 {
+    height: 190px;
+  }
+
+  .activite_2 {
+    height: 190px;
+  }
+
+  /*====================================*/
+  /*===============Footer===============*/
+  /*====================================*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer section {
+    padding: 0 0 0 29px;
+  }
+
+  .copyright {
+    background-color: #f2f2f2;
+  }
+}
+
+/* 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #page {
     margin: auto;
     text-align: justify;
     margin: 50px;
+    color: red;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header img {
+    margin: auto;
+  }
+
+  .filtres-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #page {
+    margin: auto;
+    text-align: justify;
+    margin: 50px;
+    color: red;
   }
 
   header {
