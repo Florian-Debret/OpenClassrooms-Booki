@@ -14,6 +14,10 @@ a {
   scroll-behavior: smooth;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /*==================================*/
 /*===============Body===============*/
 /*==================================*/
@@ -34,12 +38,12 @@ a {
 }
 
 .conteneur-liens a {
-  padding-top: 50px;
+  padding: 43px 35px 0 35px;
   border-top: 2px solid transparent;
   color: black;
   text-decoration: none;
   display: inline-block;
-  min-width: 120px;
+  min-width: 50px;
   text-align: center;
 }
 
@@ -135,11 +139,15 @@ nav ul li {
 }
 
 .filtres-list {
+  display: flex;
   margin: 0;
+  width: 80%;
 }
 
 .filtres-list li {
-  display: inline-block;
+  display: flex;
+  width: fit-content;
+  margin-right: 2%;
 }
 
 .filtre {
@@ -154,19 +162,25 @@ nav ul li {
 }
 
 .filtre:checked + label {
-  box-shadow: 3px 3px 10px #0065fc;
+  border: 2px solid #0065fc;
 }
 
 .cercle-gris {
-  display: inline-flex;
+  display: flex;
   border: 2px solid #f2f2f2;
   border-radius: 6666px;
   align-items: center;
-  margin: 0 34px 0 0;
+  margin: 0;
+}
+
+.cercle-gris i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cercle-gris:hover {
-  border: px solid #0065fc;
+  border: 2px solid #0065fc;
 }
 
 .cercle-gris span {
@@ -178,14 +192,11 @@ li {
 }
 
 .cercle-bleu {
-  display: inline-flex;
   color: #0065fc;
   background-color: #deebff;
   border-radius: 50px;
   height: 50px;
   width: 50px;
-  align-items: center;
-  justify-content: center;
 }
 
 .cercle-information {
@@ -230,6 +241,10 @@ li {
   margin: 0 3% 0 0;
 }
 
+.bloc-gris h2 {
+  margin: 0 0 15px 0;
+}
+
 section h2 {
   margin: 0;
 }
@@ -246,7 +261,7 @@ article .infobulle {
 }
 
 .infobulle figure:hover {
-  transform: scale(110%);
+  transform: scale(1.1);
   transition-duration: 0.5s;
   box-shadow: 1px 1px 15px #0064fa;
 }
@@ -284,7 +299,7 @@ article p {
   color: #0064fa;
 }
 
-#empty {
+.empty {
   color: #f2f2f2;
 }
 
@@ -345,7 +360,7 @@ aside figure {
 }
 
 aside figure:hover {
-  transform: scale(107%);
+  transform: scale(1.07);
   transition-duration: 0.5s;
   box-shadow: 1px 1px 15px #0064fa;
 }
@@ -408,7 +423,7 @@ aside p {
 }
 
 .grande_image figure:hover {
-  transform: scale(105%);
+  transform: scale(1.05);
   transition-duration: 0.5s;
   box-shadow: 1px 1px 15px #0064fa;
 }
@@ -434,7 +449,7 @@ aside p {
 }
 
 .petite_image figure:hover {
-  transform: scale(105%);
+  transform: scale(1.05);
   transition-duration: 0.5s;
   box-shadow: 1px 1px 15px #0064fa;
 }
@@ -498,7 +513,7 @@ aside p {
 footer {
   background-color: #f2f2f2;
   margin: auto;
-  display: block 10px 10px 10px 10px;
+  display: block;
   padding: 0 15px;
   display: flex;
 }
