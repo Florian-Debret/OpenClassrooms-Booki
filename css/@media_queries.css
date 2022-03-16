@@ -41,20 +41,39 @@
     width: 100%;
   }
 
+  .conteneur-liens a {
+    padding: 35px 35px 20px 35px;
+    border-bottom: 3px solid transparent;
+  }
+
+  .conteneur-liens a:hover {
+    color: #0065fc;
+    border-bottom-color: #0065fc;
+    border-top-color: #0065fc00;
+  }
+
   .cercle-gris span {
     padding-right: 15px;
   }
+
   /*=================================*/
   /*===============Nav===============*/
   /*=================================*/
-  .filtres-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
   .navigations-main {
     margin: 20px;
+  }
+
+  .boutton {
+    border-radius: 19px;
+    transform: translate(-19px);
+  }
+
+  .boutton .icone {
+    display: inline;
+  }
+
+  .boutton .texte {
+    display: none;
   }
 
   .filtres {
@@ -69,24 +88,15 @@
     text-align: start;
   }
 
+  .filtres-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
   .filtres-list li {
     font-size: 14px;
     margin: 0 4% 10px 0;
   }
-
-  .boutton .icone {
-    display: inline;
-  }
-
-  .boutton .texte {
-    display: none;
-  }
-
-  .boutton {
-    border-radius: 19px;
-    transform: translate(-19px);
-  }
-
   /*=================================================*/
   /*===============Section hébergement===============*/
   /*=================================================*/
