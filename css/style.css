@@ -14,7 +14,7 @@ a {
   scroll-behavior: smooth;
 }
 
-.bold {
+.gras {
   font-weight: bold;
 }
 
@@ -22,7 +22,7 @@ a {
 /*===============Body===============*/
 /*==================================*/
 
-#page {
+.page {
   margin: 0px 50px 0px 50px;
   text-align: justify;
   max-width: 2440px;
@@ -67,11 +67,11 @@ a {
 /*===============Nav===============*/
 /*=================================*/
 
-.navigations-main h1 {
+.navigations-principale h1 {
   margin: 50px 0 0 0;
 }
 
-.navigations-main p {
+.navigations-principale p {
   margin: 12px 0 19px 0;
 }
 
@@ -142,13 +142,13 @@ nav ul li {
   padding: 0 34px 0 0;
 }
 
-.filtres-list {
+.filtres-liste {
   display: flex;
   margin: 0;
   width: 80%;
 }
 
-.filtres-list li {
+.filtres-liste li {
   display: flex;
   width: fit-content;
   margin-right: 2%;
@@ -305,11 +305,11 @@ article p {
   color: #0064fa;
 }
 
-.empty {
+.vide {
   color: #f2f2f2;
 }
 
-.stars {
+.étoiles {
   margin: 0 0 05px 0;
 }
 

@@ -1,8 +1,8 @@
-@media screen and (min-width: 1px) and (max-width: 991px) {
+@media screen and (min-width: 1px) and (max-width: 768px) {
   /*=====================================*/
   /*===============Body===============*/
   /*=====================================*/
-  #page {
+  .page {
     margin: 0;
     text-align: justify;
   }
@@ -88,12 +88,12 @@
     text-align: start;
   }
 
-  .filtres-list {
+  .filtres-liste {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-  .filtres-list li {
+  .filtres-liste li {
     font-size: 14px;
     margin: 0 4% 10px 0;
   }
