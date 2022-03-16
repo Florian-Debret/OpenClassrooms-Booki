@@ -74,6 +74,21 @@
     margin: 0 4% 10px 0;
   }
 
+  .boutton {
+    display: none;
+  }
+
+  .fa-search {
+    visibility: visible;
+    align-items: center;
+    display: flex;
+    padding: 18px;
+    border-radius: 18px;
+    color: white;
+    background-color: #0065fc;
+    border: none;
+  }
+
   /*=================================================*/
   /*===============Section hébergement===============*/
   /*=================================================*/
