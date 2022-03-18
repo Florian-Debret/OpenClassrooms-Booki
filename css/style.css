@@ -5,7 +5,6 @@ a {
   text-decoration: none;
   color: black;
 }
-
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
@@ -13,30 +12,39 @@ a {
   padding: 0;
   scroll-behavior: smooth;
 }
-
 .gras {
   font-weight: bold;
 }
-
 /*==================================*/
 /*===============Body===============*/
 /*==================================*/
-
 .page {
   margin: 0px 50px 0px 50px;
-  text-align: justify;
   max-width: 2440px;
 }
-
 /*====================================*/
 /*===============Header===============*/
 /*====================================*/
 
+/* <--------Général--------> */
 .haut-de-page {
   display: flex;
   justify-content: space-between;
 }
-
+/* <--------Logo site--------> */
+.conteneur-logo {
+  display: flex;
+  align-content: end;
+}
+.conteneur-logo img {
+  max-height: 45px;
+  width: 100%;
+  margin: 45px 0 0 0;
+}
+/* <--------Onglets de selections--------> */
+.conteneur-liens {
+  display: inline-block;
+}
 .conteneur-liens a {
   padding: 43px 35px 0 35px;
   border-top: 2px solid transparent;
@@ -46,43 +54,28 @@ a {
   min-width: 50px;
   text-align: center;
 }
-
 .conteneur-liens a:hover {
   color: #0065fc;
   border-top-color: #0065fc;
 }
-
-.conteneur-logo {
-  display: flex;
-  align-content: end;
-}
-
-.conteneur-logo img {
-  max-height: 45px;
-  width: 100%;
-  margin: 45px 0 0 0;
-}
-
 /*=================================*/
 /*===============Nav===============*/
 /*=================================*/
-
+/* <--------Textes d'introduction--------> */
 .navigations-principale h1 {
   margin: 50px 0 0 0;
 }
-
 .navigations-principale p {
   margin: 12px 0 19px 0;
 }
-
+.titre {
+  padding: 0%;
+  margin: 0%;
+}
+/* <--------Formulaire de recherche--------> */
 form {
   display: flex;
 }
-
-nav ul li {
-  list-style-type: none;
-}
-
 .fa-map-marker-alt::before {
   display: flex;
   padding: 18px 20px 18px 20px;
@@ -91,7 +84,10 @@ nav ul li {
   background-color: #f2f2f2;
   border: none;
 }
-
+.textinput {
+  padding: 16px 10px;
+  min-width: 300px;
+}
 .boutton {
   background-color: #0065fc;
   color: white;
@@ -102,21 +98,7 @@ nav ul li {
   font-size: 16px;
 }
 
-.boutton .icone {
-  display: none;
-}
-
-.textinput {
-  padding: 16px 10px;
-}
-
-.titre {
-  padding: 0%;
-  margin: 0%;
-}
-
 .recherche input {
-  padding: 0 16px;
   border: 1px solid #f2f2f2;
   border-left: none;
   border-right: none;
@@ -125,35 +107,37 @@ nav ul li {
   font-weight: bold;
   font-size: 16px;
 }
-
 .recherche input::placeholder {
   color: black;
 }
-
+.boutton .icone {
+  display: none;
+}
+/* <--------Liste de filtres--------> */
+nav ul li {
+  list-style-type: none;
+}
 .filtres {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 30px 0 0 0;
 }
-
 .filtres h2 {
   text-align: center;
   padding: 0 34px 0 0;
 }
-
 .filtres-liste {
   display: flex;
   margin: 0;
   width: 80%;
 }
-
 .filtres-liste li {
   display: flex;
   width: fit-content;
   margin-right: 2%;
+  list-style: none;
 }
-
 .filtre {
   position: absolute;
   width: 1px;
@@ -164,11 +148,11 @@ nav ul li {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-
+/* <--------checkbox filtres--------> */
 .filtre:checked + label {
   border: 2px solid #0065fc;
 }
-
+/* <--------mise en formes contours filtres--------> */
 .cercle-gris {
   display: flex;
   border: 2px solid #f2f2f2;
@@ -176,25 +160,17 @@ nav ul li {
   align-items: center;
   margin: 0;
 }
-
 .cercle-gris i {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .cercle-gris:hover {
   border: 2px solid #0065fc;
 }
-
 .cercle-gris span {
   padding: 0 21px 0 15px;
 }
-
-li {
-  list-style: none;
-}
-
 .cercle-bleu {
   color: #0065fc;
   background-color: #deebff;
@@ -204,13 +180,12 @@ li {
   min-width: 50px;
   max-width: 50px;
 }
-
+/* <--------Informations--------> */
 .cercle-information {
   display: flex;
   align-items: center;
   padding: 34px 0 34px 0;
 }
-
 .fa-info {
   border: 2px solid #f2f2f2;
   color: #0065fc;
@@ -218,22 +193,32 @@ li {
   margin-right: 12px;
   padding: 4px 10px 4px 10px;
 }
-
 .cercle-information p {
   margin: 0;
 }
-
-/*=================================================*/
-/*===============Section hébergement===============*/
-/*=================================================*/
-
+/*======================================================================*/
+/*===============Commun hébergement & Les plus populaires===============*/
+/*======================================================================*/
+/* <--------Général--------> */
 .allignement {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 0 40px 0;
 }
-
+.allignement figure {
+  width: 100%;
+}
+figcaption {
+  border-radius: 0 0 15px 15px;
+}
+article p {
+  margin: 0 0 5px 0;
+}
+/*=================================================*/
+/*===============Section hébergement===============*/
+/*=================================================*/
+/* <--------fond gris--------> */
 .bloc-gris {
   background: #f2f2f2;
   border-radius: 30px;
@@ -246,77 +231,69 @@ li {
   flex-basis: 63%;
   margin: 0 3% 0 0;
 }
-
 .bloc-gris h2 {
   margin: 0 0 15px 0;
 }
-
-section h2 {
-  margin: 0;
-}
-
-section h3 {
+.allignement h3 {
   margin: 20px 0 0 0;
 }
-
-article .infobulle {
+/* <--------bulles présentation hôtel--------> */
+.bloc-gris .infobulle {
   display: flex;
   flex-direction: row;
-  margin: 20px 0;
   justify-content: space-between;
+  margin: 20px 0;
 }
-
-.infobulle figure:hover {
+.infobulle a figure:hover {
   transform: scale(1.1);
   transition-duration: 0.5s;
   box-shadow: 1px 1px 15px #0064fa;
 }
-
-.allignement article a {
-  min-width: 30%;
-  max-width: 30%;
-  height: 200px;
-}
-
-.allignement article figure {
+.allignement .infogbulle figure {
   padding: 5px;
   background-color: white;
   border-radius: 15px;
   margin: 0;
   box-shadow: 1px 1px 30px rgb(117, 112, 112);
 }
-
-.allignement article figure img {
+.allignement .bloc-gris a {
+  min-width: 30%;
+  max-width: 30%;
+  height: 200px;
+}
+/* <--------Images + légendes--------> */
+.allignement .bloc-gris figure {
+  padding: 5px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0;
+  box-shadow: 1px 1px 30px rgb(117, 112, 112);
+}
+.allignement .bloc-gris figure img {
   width: 100%;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
   height: 110px;
 }
-
-figcaption {
-  border-radius: 0 0 15px 15px;
+/* <--------légende--------> */
+.legende {
+  padding: 8px 0 0 10px;
 }
-
-article p {
-  margin: 0 0 5px 0;
-}
-
-.fa-star {
-  color: #0064fa;
-}
-
-.vide {
-  color: #f2f2f2;
-}
-
 .étoiles {
   margin: 0 0 05px 0;
 }
-
+.fa-star {
+  color: #0064fa;
+  font-size: 14px;
+  margin-left: -3px;
+}
+.vide {
+  color: #f2f2f2;
+}
 /*=========================================================*/
-/*===============Section Le splus populaires===============*/
+/*===============Section Les plus populaires===============*/
 /*=========================================================*/
-
+/* <--------fond gris--------> */
 .populaire {
   display: flex;
   flex-direction: column;
@@ -328,32 +305,30 @@ article p {
   margin: 0;
 }
 
-.titre_logo {
+/* <--------Titre & icones--------> */
+.titre_icone {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-.titre_logo i {
+.titre_icone i {
   font-size: 25px;
   color: black;
 }
-
-aside .bloc-blanc-pop {
+/* <--------bulles présentation hôtel--------> */
+.populaire .bloc-blanc-pop {
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 15px;
 }
-
-aside a {
+.populaire a {
   display: flex;
   width: 100%;
 }
-
-aside figure {
+.populaire figure {
   margin: 0;
   display: flex;
   height: 144px;
@@ -364,52 +339,49 @@ aside figure {
   box-shadow: 1px 1px 30px rgb(117, 112, 112);
   text-align: start;
 }
-
-aside figure:hover {
+.populaire figure:hover {
   transform: scale(1.07);
   transition-duration: 0.5s;
   box-shadow: 1px 1px 15px #0064fa;
 }
-
-aside p {
-  margin: 0 0 05px 0;
-}
-
 .populaire img {
   min-width: 40%;
   max-width: 40%;
   border-radius: 10px 0 0 10px;
   object-fit: cover;
 }
-
 .populaire figcaption {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
   padding: 15px 40px 0 15px;
 }
-
+.populaire p {
+  margin: 0 0 05px 0;
+}
 /*=========================================*/
 /*===============Activitées===============*/
 /*=========================================*/
-
-.activites {
+/* <--------général--------> */
+.activites_a_marseille {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 0 40px 0;
 }
-
-.activites h2 {
+/* <--------Titre--------> */
+.activites_a_marseille h2 {
   width: 100%;
   flex-basis: 100%;
   margin: 0 0 20px 0;
 }
-
-.article {
+/* <--------tuiles activitées--------> */
+.bloc_activites {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
 }
-
 .grande_image,
 .petite_image {
   width: 20%;
@@ -418,7 +390,6 @@ aside p {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .grande_image figure {
   width: 100%;
   background-color: white;
@@ -427,24 +398,17 @@ aside p {
   flex-direction: column;
   box-shadow: 1px 1px 15px rgba(117, 112, 112, 0.411);
 }
-
 .grande_image figure:hover {
   transform: scale(1.05);
   transition-duration: 0.5s;
   box-shadow: 1px 1px 15px #0064fa;
 }
-
 .grande_image figure img {
   height: 390px;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-
-.grande_image figcaption {
-  padding: 15px;
-}
-
 .petite_image figure {
   background-color: white;
   border-radius: 20px;
@@ -453,127 +417,79 @@ aside p {
   flex-direction: column;
   box-shadow: 1px 1px 15px rgba(117, 112, 112, 0.411);
 }
-
 .petite_image figure:hover {
   transform: scale(1.05);
   transition-duration: 0.5s;
   box-shadow: 1px 1px 15px #0064fa;
 }
-
+.grande_image figcaption {
+  padding: 15px;
+}
 .activite_1 {
   height: 236px;
   width: 300px;
   border-radius: 20px;
 }
-
 .activite_1 img {
   height: 180px;
   width: 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-
 .activite_1 figcaption {
   padding: 15px;
 }
-
 .activite_2 {
   height: 165px;
   width: 100%;
   border-radius: 20px;
 }
-
 .activite_2 img {
   height: 110px;
   width: 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-
 .activite_2 figcaption {
   padding: 15px;
 }
-
-.grande_image_test {
-  height: 445px;
-  width: 300px;
-  background-color: white;
-  border-radius: 20px;
-}
-
-.grande_image_test img {
-  height: 390px;
-  width: 300px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-.grande_image_test p {
-  padding: 15px;
-}
-
 /*====================================*/
 /*===============Footer===============*/
 /*====================================*/
-
 footer {
   background-color: #f2f2f2;
   margin: auto;
-  display: block;
-  padding: 0 15px;
   display: flex;
+  padding: 50px 0 0 0;
 }
-
-footer h3 {
-  margin: 0 0 15px 0;
-}
-
-footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-footer li {
-  margin-bottom: 15px;
-}
-
 footer section {
   align-items: center;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
-
+footer h3 {
+  margin: 0 0 15px 0;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer li {
+  margin-bottom: 15px;
+}
 footer section a {
   text-decoration: none;
   color: black;
 }
-
 footer section a:hover {
   text-decoration: underline;
 }
-
-.colonne {
-  display: flex;
-  padding: 50px 0 0 0;
-}
-
-.flex {
-  flex-grow: 1;
-}
-
 /*=======================================*/
 /*===============Copyright===============*/
 /*=======================================*/
-
 .copyright * {
   background-color: #f2f2f2;
   padding: 15px 0 0 0;
   font-size: 10px;
-}
-
-@media (max-width: 800px) {
-  .footer section {
-    flex-direction: row;
-    height: auto;
-  }
 }

@@ -1,38 +1,32 @@
-@media screen and (min-width: 1px) and (max-width: 768px) {
+/*===========================================================================*/
+/*==============================Mobile======================================*/
+/*===========================================================================*/
+@media screen and (max-width: 768px) {
   /*=====================================*/
-  /*===============Body===============*/
+  /*=================Body================*/
   /*=====================================*/
   .page {
     margin: 0;
-    text-align: justify;
   }
-
   /*====================================*/
   /*===============Header===============*/
   /*====================================*/
+  /* <--------General--------> */
   header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
+  /* <--------Logo--------> */
   .conteneur-logo img {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 70px;
+    max-height: 50px;
     width: auto;
     margin: 20px 0 0 0;
   }
-
-  nav a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-    width: 50%;
-  }
-
+  /* <--------Onglets de selection--------> */
   .conteneur-liens {
     display: flex;
     flex-direction: row;
@@ -40,32 +34,289 @@
     margin: 0;
     width: 100%;
   }
-
   .conteneur-liens a {
     padding: 35px 35px 20px 35px;
-    border-bottom: 3px solid transparent;
+    border: 3px solid transparent;
+    width: 100%;
   }
-
   .conteneur-liens a:hover {
     color: #0065fc;
     border-bottom-color: #0065fc;
     border-top-color: #0065fc00;
   }
-
-  .cercle-gris span {
-    padding-right: 15px;
-  }
-
   /*=================================*/
   /*===============Nav===============*/
   /*=================================*/
-  .navigations-main {
-    margin: 20px;
+  /* <--------Textes d'introductions--------> */
+  .navigations-principale {
+    margin: 20px 20px 0 20px;
+    padding: 0;
   }
-
+  .titre h1 {
+    font-size: 25px;
+    padding: 0;
+  }
+  .titre p {
+    padding: 0 0 20px 0;
+  }
+  /* <--------Formulaire de recherche--------> */
+  .recherche {
+    width: 100%;
+  }
   .boutton {
     border-radius: 19px;
     transform: translate(-19px);
+  }
+  .boutton .icone {
+    display: inline;
+  }
+  .boutton .texte {
+    display: none;
+  }
+  /* <--------Listes de filtres--------> */
+  .filtres {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 13px;
+  }
+  .filtres h2 {
+    text-align: start;
+    margin: 13px;
+  }
+  .filtres-liste {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .filtres-liste li {
+    font-size: 14px;
+    margin: 0 4% 10px 0;
+  }
+  .filtre .cercle-gris span {
+    padding-right: 15px;
+  }
+  /* <--------Informations--------> */
+  .cercle-information {
+    padding: 30px 0;
+  }
+  /*======================================================================*/
+  /*===============Commun hébergement & Les plus populaires===============*/
+  /*======================================================================*/
+  /* <--------Général--------> */
+  .allignement {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /*=========================================================*/
+  /*===============Section Le splus populaires===============*/
+  /*=========================================================*/
+  /* <--------Titre & icones--------> */
+  .populaire {
+    padding: 20px 20px 35px 20px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  .titre_icone {
+    margin: 20px 0 0 0;
+  }
+  /* <--------bulles présentation hôtel--------> */
+  .bloc-blanc-pop a {
+    margin: 5px 0;
+  }
+  .bloc-blanc-pop img {
+    border-radius: 15px 0 0 15px;
+  }
+  /*=================================================*/
+  /*===============Section hébergement===============*/
+  /*=================================================*/
+  .bloc-gris {
+    padding: 40px 20px 20px 20px;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+  }
+  .bloc-gris .infobulle {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .bloc-gris .infobulle a {
+    min-width: 100%;
+    margin: 5px 0;
+  }
+  .infobulle a figure:hover {
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 15px #0064fa;
+  }
+  /*=========================================*/
+  /*===============Activitées===============*/
+  /*=========================================*/
+  /* <--------général--------> */
+  .activites_a_marseille {
+    padding: 0 20px;
+  }
+  .bloc_activites {
+    display: flex;
+    flex-direction: column;
+  }
+  /* <--------tuiles activitées--------> */
+  .bloc_activites figure {
+    margin: 10px 0;
+  }
+  .bloc_activites img {
+    max-height: 134px;
+    min-height: 134px;
+  }
+  .petite_image {
+    width: auto;
+  }
+  .grande_image {
+    width: auto;
+  }
+  .grande_image figure:hover {
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 15px #0064fa;
+  }
+  .petite_image figure:hover {
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 15px #0064fa;
+  }
+  .activite_1 {
+    height: 190px;
+  }
+  .activite_2 {
+    height: 190px;
+  }
+  /*====================================*/
+  /*===============Footer===============*/
+  /*====================================*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer section {
+    padding: 0 0 0 29px;
+  }
+  .copyright {
+    background-color: #f2f2f2;
+  }
+}
+/*===========================================================================*/
+/*===================================Tablette================================*/
+/*===========================================================================*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /*===================================*/
+  /*=================Body================*/
+  /*=====================================*/
+  .page {
+    margin: 0;
+  }
+
+  /*====================================*/
+  /*===============Header===============*/
+  /*====================================*/
+  /* <--------General--------> */
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* <--------Logo--------> */
+  .conteneur-logo img {
+    max-height: none;
+    margin: 0;
+  }
+  /* <--------Onglets de selection--------> */
+  .conteneur-liens {
+    display: none;
+  }
+  .conteneur-liens a {
+    padding: 35px 35px 20px 35px;
+    border-bottom: 3px solid transparent;
+  }
+  .conteneur-liens a:hover {
+    color: #0065fc;
+    border-bottom-color: #0065fc;
+    border-top-color: #0065fc00;
+  }
+  /*=================================*/
+  /*===============Nav===============*/
+  /*=================================*/
+  /* <--------Textes d'introductions--------> */
+  .navigations-principale {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  /* <--------Formulaire de recherche--------> */
+  .recherche * {
+    border: solid 1px red;
+  }
+  .recherche {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f2f2f2;
+    height: 60px;
+    transform: none;
+    border-radius: 6666px;
+    order: 2;
+  }
+  .textinput {
+    min-width: 768px;
+    max-width: 992px;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  .fa-map-marker-alt::before {
+    background-color: #0065fc00;
+  }
+  /* --------FILTRES-------- */
+  .filtres h2 {
+    display: none;
+  }
+  .filtres-liste li {
+    margin: 0 0 0 0;
+  }
+  .filtres-liste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .filtres {
+    margin: 30px 1% 10px 1%;
+    order: 1;
+  }
+  /* --------TITRES-------- */
+  .titre {
+    padding: 0 0 20px 0;
+    text-align: center;
+  }
+  .titre h1 {
+    margin: 0;
+    text-align: center;
+  }
+  .titre p {
+    margin: 12px 0 0 0;
+    text-align: center;
+  }
+
+  .navigations-principale {
+    margin: 0 20px;
+  }
+
+  .boutton {
+    border-radius: 666px;
+    transform: translate(0px);
   }
 
   .boutton .icone {
@@ -76,27 +327,16 @@
     display: none;
   }
 
-  .filtres {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
+  .cercle-information {
+    padding: 5px 20px 34px 10px;
+    order: 3;
   }
 
   .filtres h2 {
-    width: 100%;
     text-align: start;
+    margin: 0 0 20px 0;
   }
 
-  .filtres-liste {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .filtres-liste li {
-    font-size: 14px;
-    margin: 0 4% 10px 0;
-  }
   /*=================================================*/
   /*===============Section hébergement===============*/
   /*=================================================*/
@@ -112,14 +352,18 @@
     background-color: rgba(255, 0, 0, 0);
   }
 
-  article .infobulle {
+  .allignement .infobulle {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0;
   }
 
-  .allignement article a {
-    min-width: 100%;
+  .allignement .infobulle figure {
+    height: 300px;
+    width: 300px;
+  }
+
+  .allignement .infobulle a {
     margin: 5px 0;
   }
 
@@ -132,39 +376,41 @@
     width: 100%;
     border-radius: 0;
   }
+  .populaire figure {
+    height: 300px;
+    width: 300px;
+  }
 
-  aside figure {
-    margin: 5px 0;
-    border-radius: 20px;
-    padding: 5px;
+  .populaire .bloc-blanc-pop {
+    display: flex;
+    flex-direction: row;
   }
 
   .bloc-blanc-pop img {
     border-radius: 15px 0 0 15px;
   }
 
-  .titre_logo {
+  .titre_icone {
     margin: 20px 0 0 0;
   }
-
   /*=========================================*/
   /*===============Activitées===============*/
   /*=========================================*/
 
-  .activites {
+  .activites_a_marseille {
     padding: 0 20px;
   }
 
-  .article {
+  .bloc_activites {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  .article figure {
+  .bloc_activites figure {
     margin: 10px 0;
   }
 
-  .article img {
+  .bloc_activites img {
     max-height: 134px;
     min-height: 134px;
   }
@@ -184,31 +430,4 @@
   .activite_2 {
     height: 190px;
   }
-
-  /*====================================*/
-  /*===============Footer===============*/
-  /*====================================*/
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  footer section {
-    padding: 0 0 0 29px;
-  }
-
-  .copyright {
-    background-color: #f2f2f2;
-  }
 }
-
-/* 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-
-}
-
-
-@media screen and (min-width: 0px) and (max-width: 768px) {
-
-} */
