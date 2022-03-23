@@ -87,7 +87,6 @@ form {
 }
 .textinput {
   padding: 16px 10px;
-  /* min-width: 150px; */
 }
 .boutton {
   background-color: #0065fc;
@@ -136,7 +135,7 @@ nav ul li {
 .filtres-liste li {
   display: flex;
   width: fit-content;
-  margin-right: 2%;
+  margin: 0 2% 10px 0;
   list-style: none;
 }
 .filtre {
