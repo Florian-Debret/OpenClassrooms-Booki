@@ -75,8 +75,9 @@ a {
 /* <--------Formulaire de recherche--------> */
 form {
   display: flex;
+  justify-content: flex-start;
 }
-.fa-map-marker-alt::before {
+.fa-map-marker-alt {
   display: flex;
   padding: 18px 20px 18px 20px;
   border-radius: 18px 0 0 18px;
@@ -86,7 +87,7 @@ form {
 }
 .textinput {
   padding: 16px 10px;
-  min-width: 300px;
+  /* min-width: 150px; */
 }
 .boutton {
   background-color: #0065fc;
