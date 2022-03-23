@@ -276,8 +276,6 @@
     order: 2;
   }
   .textinput {
-    min-width: 768px;
-    max-width: 992px;
     padding: 10px;
     background-color: #f2f2f2;
   }
@@ -382,17 +380,33 @@
     border-radius: 0;
   }
   .populaire figure {
-    height: 300px;
+    height: 350px;
     width: 300px;
   }
 
   .populaire .bloc-blanc-pop {
     display: flex;
     flex-direction: row;
+    overflow: auto;
+  }
+
+  .bloc-blanc-pop figure {
+    flex-direction: column;
+    box-shadow: none;
+    margin: 0 30px 0 0;
+  }
+
+  .bloc-blanc-pop figcaption {
+    max-width: none;
+    max-height: 150px;
+    padding: 15px 0 0 15px;
   }
 
   .bloc-blanc-pop img {
-    border-radius: 15px 0 0 15px;
+    border-radius: 10px 10px 0 0;
+    min-height: 200px;
+    max-height: 200px;
+    max-width: none;
   }
 
   .titre_icone {
@@ -409,23 +423,39 @@
   .bloc_activites {
     display: flex;
     flex-direction: row;
+    overflow: auto;
   }
 
   .bloc_activites figure {
-    margin: 10px 0;
+    border: red solid 1px;
+    max-height: 200px;
   }
 
   .bloc_activites img {
     max-height: 134px;
     min-height: 134px;
+    max-width: 200px;
+    min-width: 200px;
   }
 
   .petite_image {
+    border: red solid 1px;
+    flex-direction: row;
+    flex-basis: unset;
     width: auto;
+    width: 500px;
+  }
+
+  .petite_image a {
+    margin: 0 10px;
+    max-height: 200px;
   }
 
   .grande_image {
     width: auto;
+    display: inline;
+    max-height: 150px;
+    margin: 0 10px;
   }
 
   .activite_1 {
