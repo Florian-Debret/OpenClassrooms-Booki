@@ -424,26 +424,27 @@
     display: flex;
     flex-direction: row;
     overflow: auto;
+    height: 205px;
   }
 
   .bloc_activites figure {
-    border: red solid 1px;
     max-height: 200px;
+    min-height: 190px;
+    min-width: 250px;
   }
 
   .bloc_activites img {
     max-height: 134px;
     min-height: 134px;
-    max-width: 200px;
+    max-width: 250px;
     min-width: 200px;
   }
 
   .petite_image {
-    border: red solid 1px;
     flex-direction: row;
     flex-basis: unset;
     width: auto;
-    width: 500px;
+    width: 600px;
   }
 
   .petite_image a {
