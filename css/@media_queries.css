@@ -261,16 +261,26 @@
     margin: 20px;
   }
   /* <--------Formulaire de recherche--------> */
-  .recherche * {
-    border: solid 1px red;
+
+  .fa-map-marker-alt {
+    border-radius: 6666px;
   }
+
+  .recherche * {
+    justify-content: flex-start;
+  }
+
+  .recherche input {
+    min-width: 768px;
+    max-width: 700px;
+  }
+
   .recherche {
     padding: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #f2f2f2;
-    height: 60px;
+    height: 100%;
     transform: none;
     border-radius: 6666px;
     order: 2;
@@ -279,9 +289,7 @@
     padding: 10px;
     background-color: #f2f2f2;
   }
-  .fa-map-marker-alt::before {
-    background-color: #0065fc00;
-  }
+
   /* --------FILTRES-------- */
   .filtres h2 {
     display: none;
@@ -374,7 +382,7 @@
   /*===============Section Le splus populaires===============*/
   /*=========================================================*/
   .populaire {
-    height: 470px;
+    height: 500px;
     padding: 20px;
     margin: 0;
     width: 100%;
