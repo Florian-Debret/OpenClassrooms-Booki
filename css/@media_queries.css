@@ -281,11 +281,6 @@
     justify-content: flex-start;
   }
 
-  .recherche input {
-    min-width: 768px;
-    max-width: 700px;
-  }
-
   .recherche {
     padding: 0px;
     display: flex;
