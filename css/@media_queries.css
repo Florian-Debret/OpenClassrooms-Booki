@@ -35,7 +35,7 @@
     width: 100%;
   }
   .conteneur-liens a {
-    padding: 35px 35px 20px 35px;
+    padding: 35px 35px 15px 35px;
     border: 3px solid transparent;
     width: 100%;
   }
@@ -55,6 +55,7 @@
   .titre h1 {
     font-size: 25px;
     padding: 0;
+    margin: 30px 0 0 0;
   }
   .titre p {
     padding: 0 0 20px 0;
@@ -109,6 +110,10 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .allignement h3 {
+    margin: 40px 0 0 0;
+  }
   /*=========================================================*/
   /*===============Section Le splus populaires===============*/
   /*=========================================================*/
@@ -119,6 +124,11 @@
     width: 100%;
     border-radius: 0;
   }
+
+  .populaire .bloc-blanc-pop {
+    margin-top: 0;
+  }
+
   .titre_icone {
     margin: 20px 0 0 0;
   }
@@ -145,7 +155,7 @@
   }
   .bloc-gris .infobulle a {
     min-width: 100%;
-    margin: 5px 0;
+    margin: 7px 0;
   }
 
   .infobulle figure {
@@ -167,6 +177,7 @@
   .bloc_activites {
     display: flex;
     flex-direction: column;
+    margin: 0px;
   }
   /* <--------tuiles activitées--------> */
   .bloc_activites figure {
@@ -216,7 +227,7 @@
 /*===========================================================================*/
 /*===================================Tablette================================*/
 /*===========================================================================*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   /*===================================*/
   /*=================Body================*/
   /*=====================================*/
@@ -279,12 +290,17 @@
     padding: 0px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     height: 100%;
     transform: none;
     border-radius: 6666px;
     order: 2;
+    background-color: #f2f2f2;
   }
+
+  .recherche label {
+    flex: 1;
+  }
+
   .textinput {
     padding: 10px;
     background-color: #f2f2f2;
@@ -327,7 +343,8 @@
 
   .boutton {
     border-radius: 666px;
-    transform: translate(0px);
+    width: 50px;
+    height: 50px;
   }
 
   .boutton .icone {
@@ -347,13 +364,16 @@
     text-align: start;
     margin: 0 0 20px 0;
   }
+  /* #region un truc*/
 
+  /* #endregion */
   /*=================================================*/
   /*===============Section hébergement===============*/
   /*=================================================*/
   .allignement {
     display: flex;
     flex-direction: column-reverse;
+    margin: 0;
   }
 
   .bloc-gris {
@@ -364,39 +384,45 @@
   }
 
   .allignement .infobulle {
+    height: 100%;
     display: flex;
     flex-direction: row;
-    margin: 0;
-  }
-
-  .allignement .infobulle figure {
-    height: 300px;
-    width: 300px;
+    margin: 10px 0;
   }
 
   .allignement .infobulle a {
     margin: 5px 0;
   }
 
+  .Afficher_plus {
+    display: none;
+  }
+
   /*=========================================================*/
   /*===============Section Le splus populaires===============*/
   /*=========================================================*/
   .populaire {
-    height: 500px;
     padding: 20px;
     margin: 0;
     width: 100%;
     border-radius: 0;
   }
+
+  .populaire h2 {
+    margin: 0 0 10px 0;
+  }
+
   .populaire figure {
     height: 350px;
     width: 300px;
   }
 
   .populaire .bloc-blanc-pop {
+    padding: 20px;
     display: flex;
     flex-direction: row;
     overflow: auto;
+    margin-top: 0;
   }
 
   .bloc-blanc-pop figure {
@@ -418,22 +444,24 @@
     max-width: none;
   }
 
-  .titre_icone {
-    margin: 20px 0 0 0;
-  }
   /*=========================================*/
   /*===============Activitées===============*/
   /*=========================================*/
 
   .activites_a_marseille {
-    padding: 0 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .activites_a_marseille h2 {
+    margin: 0;
   }
 
   .bloc_activites {
     display: flex;
     flex-direction: row;
     overflow: auto;
-    height: 205px;
+    padding: 15px;
   }
 
   .bloc_activites figure {

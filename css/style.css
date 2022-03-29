@@ -232,7 +232,7 @@ article p {
   margin: 0 3% 0 0;
 }
 .bloc-gris h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
 }
 .allignement h3 {
   margin: 20px 0 0 0;
@@ -267,7 +267,7 @@ article p {
   background-color: white;
   border-radius: 15px;
   margin: 0;
-  box-shadow: 1px 1px 30px rgb(117, 112, 112);
+  box-shadow: 0px 0px 20px 0 rgb(117, 112, 112);
 }
 .allignement .bloc-gris figure img {
   width: 100%;
@@ -305,6 +305,10 @@ article p {
   margin: 0;
 }
 
+.populaire h2 {
+  margin: 0 0 20px 0;
+}
+
 /* <--------Titre & icones--------> */
 .titre_icone {
   width: 100%;
@@ -322,7 +326,7 @@ article p {
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .populaire a {
   display: flex;
@@ -368,6 +372,7 @@ article p {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 0 40px 0;
+  padding: 40px 0 0 0;
 }
 /* <--------Titre--------> */
 .activites_a_marseille h2 {
@@ -381,7 +386,9 @@ article p {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  margin: 20px 0 0 0;
 }
+
 .grande_image,
 .petite_image {
   width: 20%;
