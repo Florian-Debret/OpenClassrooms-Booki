@@ -246,16 +246,21 @@
   }
   /* <--------Logo--------> */
   .conteneur-logo img {
-    max-height: none;
-    margin: 0;
+    max-height: 70px;
+    margin: 0 0 10px 0;
   }
   /* <--------Onglets de selection--------> */
   .conteneur-liens {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
   }
   .conteneur-liens a {
-    padding: 35px 35px 20px 35px;
-    border-bottom: 3px solid transparent;
+    padding: 35px 35px 15px 35px;
+    border: 3px solid transparent;
+    width: 100%;
   }
   .conteneur-liens a:hover {
     color: #0065fc;
@@ -271,6 +276,10 @@
     flex-direction: column;
     margin: 20px;
   }
+
+  .navigations-principale h1 {
+    font-size: 25px;
+  }
   /* <--------Formulaire de recherche--------> */
 
   .fa-map-marker-alt {
@@ -282,6 +291,7 @@
   }
 
   .recherche {
+    margin: 10px 0;
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -315,7 +325,7 @@
     width: 100%;
   }
   .filtres {
-    margin: 30px 1% 10px 1%;
+    margin: 10px 1% 10px 1%;
     order: 1;
   }
   /* --------TITRES-------- */
@@ -324,7 +334,7 @@
     text-align: center;
   }
   .titre h1 {
-    margin: 0;
+    margin: 25px 0 0 0;
     text-align: center;
   }
   .titre p {
