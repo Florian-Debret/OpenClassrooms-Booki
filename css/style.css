@@ -225,7 +225,7 @@ form {
 }
 .fa-star {
   color: #0065fc;
-  margin-left: -3px;
+  margin-left: 1px;
 }
 .vide {
   color: #d9d9d9;
@@ -234,6 +234,8 @@ form {
 /*===============Section hébergement===============*/
 /*=================================================*/
 .hebergement {
+  display: flex;
+  flex-direction: column;
   padding: 3%;
   border-radius: 30px;
   width: 66%;
@@ -287,8 +289,17 @@ form {
 .tuiles_hebergements .etoiles {
   padding: 0 0 2% 5%;
   font-size: 1em;
+  flex-grow: 1;
+  padding-block: 0 !important;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1rem !important;
 }
 .afficher_plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex-grow: 1;
   padding: 4% 0 0 0;
   font-size: 1.5em;
   font-weight: bold;
@@ -364,6 +375,11 @@ form {
 .tuiles_populaires .etoiles {
   padding: 20% 0 2% 10%;
   font-size: 1em;
+  flex-grow: 1;
+  padding-block: 0 !important;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1rem !important;
 }
 /*=========================================*/
 /*===============Activitées===============*/

@@ -204,7 +204,7 @@
     font-size: 1em;
   }
   .tuiles_populaires .etoiles {
-    padding: 3% 0 6% 5%;
+    padding: 3% 0 6% 5% !important;
     font-size: 0.9em;
   }
   .titre_icone h2 {
@@ -248,7 +248,7 @@
     font-size: 1em;
   }
   .tuiles_hebergements .etoiles {
-    padding: 3% 0 6% 5%;
+    padding: 3% 0 6% 5% !important;
     font-size: 0.9em;
   }
   .afficher_plus {
@@ -397,6 +397,7 @@
   }
   .fa-info {
     padding: 7px 12px;
+    margin-bottom: 25px;
   }
   header {
     flex-direction: column;
