@@ -548,16 +548,16 @@
     height: 170px;
   }
   .tuiles_populaires .titre {
-    padding: 6% 0 0 10%;
+    padding: 15px 0 0 6%;
     font-size: 1.5em;
     font-weight: bold;
   }
   .tuiles_populaires .tarif {
-    padding: 3% 0 0 10%;
+    padding: 3% 0 0 6%;
     font-size: 1.2em;
   }
   .tuiles_populaires .etoiles {
-    padding: 20% 0 5% 10%;
+    padding: 20% 0 5% 6%;
     font-size: 1em;
   }
   .tuiles_populaires {
