@@ -545,7 +545,7 @@
     border-radius: 25px 0 0 25px;
   }
   .tuiles_populaires .image_populaires {
-    height: auto;
+    height: 170px;
   }
   .tuiles_populaires .titre {
     padding: 6% 0 0 10%;
@@ -563,6 +563,9 @@
   .tuiles_populaires {
     border-radius: 30px;
     padding: 1%;
+  }
+  .tuiles_populaires img {
+    width: 155px;
   }
   /*=================================================*/
   /*===============Section hébergement===============*/
